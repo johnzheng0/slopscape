@@ -1,0 +1,96 @@
+QFileDialog {
+background-color: white;
+color: black;
+}
+QDialog {
+background-color: rgb(48,48,48);
+}
+QDialog QLabel {
+color: white;
+}
+
+QToolTip {
+color: white;
+background-color: rgba(0,0,0,128);
+border: 0px;
+}
+
+QAbstractButton {
+background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+padding: 6px;
+border-radius: 6px;
+}
+QAbstractButton:hover {
+/*background-color: rgba(255,255,255,32);*/
+background-color: qlineargradient(
+spread:pad, x1:0, y1:0, x2:0.1, y2:1,
+stop:0 rgb(255,128,128),
+stop:1 rgb(255,128,255));
+}
+QAbstractButton:pressed {
+/*background-color: rgba(128,128,128,32);*/
+background-color: qlineargradient(
+spread:pad, x1:0, y1:0, x2:0.1, y2:1,
+stop:0 rgb(128,64,64),
+stop:1 rgb(128,64,128));
+}
+
+QRadioButton:checked {
+background-color: qlineargradient(
+spread:pad, x1:0, y1:0, x2:0.1, y2:1,
+stop:0 rgb(255,128,128),
+stop:1 rgb(255,128,255));
+}
+QRadioButton::indicator:checked {
+height: 0px;
+}
+
+QTabWidget {
+background-color: rgb(64,64,64);
+}
+QTabWidget::pane {
+padding: 0px;
+border: 1px solid rgb(0, 0, 0);
+}
+QTabWidget::tab-bar:top {
+alignment: center;
+}
+QTabBar::tab:top {
+background-color: rgba(0,0,0,0);
+color: rgb(255,255,255);
+padding: 0px 16px 8px 16px;
+margin: 0px;
+}
+QTabBar::tab:top:selected {
+color: qlineargradient(
+spread:pad, x1:0, y1:0, x2:0.1, y2:1,
+stop:0 rgb(255,128,128),
+stop:1 rgb(255,128,255));
+background-color: qlineargradient(
+	spread:pad, x1:0, y1:0, x2:0, y2:1,
+	stop:0 rgba(0,0,0,0),
+	stop:0.89 rgba(0,0,0,0),
+	stop:0.9 rgb(255,128,128),
+	stop:1 rgb(255,128,255));
+}
+
+QScrollBar::handle {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+stop:0 rgba(0,0,0,0),
+stop:0.79 rgba(0,0,0,0),
+stop:0.80 rgb(255,128,128),
+stop:1 rgb(255,128,255));
+}
+QScrollBar::handle::hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+stop:0 rgb(255,128,128),
+stop:1 rgb(255,128,255));
+border-radius: 4px;
+}
+QScrollBar::sub-line {
+height: 0px;
+}
+QScrollBar::add-line {
+height: 0px;
+}

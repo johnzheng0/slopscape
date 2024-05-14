@@ -1,0 +1,85 @@
+QDialog {
+background-image: url(:/theme/theme/adidas.jpeg);
+background-size: cover;
+background-position: center;l
+background-repeat: no-repeat;
+}
+QWidget {
+color: white;
+}
+
+QToolTip {
+color: white;
+background-color: rgba(0,0,0,128);
+border: 0px;
+}
+
+QAbstractButton {
+background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+padding: 6px;
+border-radius: 6px;
+}
+QAbstractButton:hover {
+/*background-color: rgba(255,255,255,32);*/
+background-color: qlineargradient(
+spread:pad, x1:0, y1:0, x2:0.1, y2:1,
+stop:0 %1,
+stop:1 %2);
+}
+QAbstractButton:pressed {
+/*background-color: rgba(128,128,128,32);*/
+background-color: qlineargradient(
+spread:pad, x1:0, y1:0, x2:0.1, y2:1,
+stop:0 %3,
+stop:1 %4);
+}
+
+QTabWidget {
+background-color: rgb(64,64,64);
+}
+QTabWidget::pane {
+padding: 0px;
+border: 1px solid rgb(0, 0, 0);
+}
+QTabWidget::tab-bar:top {
+alignment: center;
+}
+QTabBar::tab {
+background-color: rgb(32,32,32);
+color: rgb(255,255,255);
+padding: 0px 16px 8px 16px;
+margin: 0px;
+}
+QTabBar::tab:selected {
+color: qlineargradient(
+spread:pad, x1:0, y1:0, x2:0.1, y2:1,
+stop:0 %1,
+stop:1 %2);
+background-color: qlineargradient(
+	spread:pad, x1:0, y1:0, x2:0, y2:1,
+	stop:0 rgba(0,0,0,0),
+	stop:0.89 rgba(0,0,0,0),
+	stop:0.9 %2,
+	stop:1 %2);
+}
+
+QScrollBar::handle {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+stop:0 rgba(0,0,0,0),
+stop:0.79 rgba(0,0,0,0),
+stop:0.80 %2,
+stop:1 %2);
+}
+QScrollBar::handle::hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+stop:0 %1,
+stop:1 %2);
+border-radius: 4px;
+}
+QScrollBar::sub-line {
+height: 0px;
+}
+QScrollBar::add-line {
+height: 0px;
+}

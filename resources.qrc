@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/icon_delete.svg</file>
+        <file>icons/icon_edit.svg</file>
+        <file>icons/icon_tag.svg</file>
+        <file>icons/icon_box.svg</file>
+        <file>icons/icon_add.svg</file>
+        <file>icons/icon_addtag.svg</file>
+        <file>icons/icon_openfolder.svg</file>
+        <file>icons/icon_folder.svg</file>
+        <file>icons/icon_mute.svg</file>
+        <file>icons/icon_speaker.svg</file>
+        <file>icons/icon_gif.svg</file>
+        <file>icons/icon_image.svg</file>
+        <file>icons/icon_video.svg</file>
+        <file>icons/icon_left.svg</file>
+        <file>icons/icon_right.svg</file>
+        <file>icons/icon_empty.svg</file>
+        <file>icons/icon_dice.svg</file>
+        <file>icons/icon_list.svg</file>
+        <file>icons/icon_settings.svg</file>
+        <file>icons/icon_brain.svg</file>
+        <file>icons/icon_exclamation.svg</file>
+    </qresource>
+    <qresource prefix="/theme">
+        <file>theme/theme.qss</file>
+    </qresource>
+</RCC>
